@@ -1,7 +1,7 @@
 CREATE TABLE carreiras (
     id_carreira SERIAL PRIMARY KEY,
-    carreira VARCHAR(100),
-    descricao_carreira TEXT
+    carreira VARCHAR(100) NOT NULL,
+    descricao_carreira TEXT NOT NULL
 );
 
 INSERT INTO carreiras (carreira, descricao_carreira) 
