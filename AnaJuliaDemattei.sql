@@ -1,11 +1,11 @@
-CREATE TABLE dicas (
+CREATE TABLE cardDicas (
 id SERIAL PRIMARY KEY,
 titulo VARCHAR(50),
 subtitulo VARCHAR(100),
-texto VARCHAR(1500)
+descricao VARCHAR(1500)
 );
 
-INSERT INTO dicas (titulo, subtitulo, texto)
+INSERT INTO dicas (titulo, subtitulo, descricao)
 VALUES
 ('Dica 01', 'Conheça os assuntos que mais caem nas provas que irá prestar!', 'Ter conhecimento do que vai cair nas provas que você vai prestar é importante porque ajuda a focar no conteúdo necessário, permitindo que você se prepare de forma mais eficiente. Isso otimiza o tempo de estudo, evita distrações com temas irrelevantes, já que você se concentra nas exigências específicas da prova.'),
 ('Dica 02', 'Anote suas dúvidas', 'É importante não deixar detalhes que podem ser importantes para o seu aprendizado passarem. Então separe um caderno para anotar suas dúvidas durante a realização de alguma questão ou leitura de um texto de forma que depois possa tirar essas dúvidas com um professor ou de maneira autônoma.'),
@@ -18,3 +18,4 @@ VALUES
 ('Dica 09', 'Entenda o contexto histórico', 'A filosofia está presente desde o surgimento da história, então entender o período, as questões sociais e os debates em que o filósofo estava envolvido ajuda a compreender melhor suas ideias.'),
 ('Dica 10', 'Questione e reflita', 'Muito da filosofia é sobre questionamento. Portanto, pergunte-se constantemente: “Por que o autor diz isso?”, “Concordo com isso?”, “Quais são as implicações dessa ideia?” Esse processo de reflexão crítica é fundamental para um estudo filosófico eficaz.')
 );
+
