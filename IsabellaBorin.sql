@@ -46,15 +46,6 @@ CREATE TABLE filosofiaMedieval (
     CONSTRAINT fk_simulado FOREIGN KEY (id_simulado) REFERENCES simulados(id)
 );
 
-CREATE TABLE filosofiaMedieval (
-    id_questao SERIAL PRIMARY KEY,
-    id_simulado INTEGER NOT NULL,
-    questoes INTEGER NOT NULL,
-    descricao TEXT NOT NULL,
-    respostas_simulado VARCHAR(1) NOT NULL,
-    CONSTRAINT fk_simulado FOREIGN KEY (id_simulado) REFERENCES simulados(id)
-);
-
 CREATE TABLE filosofiaModerna (
     id_questao SERIAL PRIMARY KEY,
     id_simulado INTEGER NOT NULL,
