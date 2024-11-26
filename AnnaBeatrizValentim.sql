@@ -25,7 +25,8 @@ CREATE TABLE filosofiaAntiga(
     questoes INTEGER NOT NULL,
     descricao TEXT NOT NULL,
     respostas_simulado VARCHAR(1) NOT NULL,
-    CONSTRAINT fk_id_simulado FOREIGN KEY (id_simulado) REFERENCES simulados(id_simulado)
+    CONSTRAINT fk_simulado FOREIGN KEY (id_simulado) REFERENCES simulados(id)
 );
+
 
 INSERT INTO simulados (nome_simulado, descricao, imagem) VALUES
