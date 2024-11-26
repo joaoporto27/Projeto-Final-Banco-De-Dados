@@ -28,38 +28,14 @@ INSERT INTO simulados (nome_simulado, imagem) VALUES
 ('Filosofia Medieval', 'https://site-filosofia.vercel.app/img/simulado02.png'),
 ('Filosofia Contemporânea', 'https://site-filosofia.vercel.app/img/simulado04.png');
 
-CREATE TABLE filosofiaAntiga(
+CREATE TABLE questoes (
     id_questao SERIAL PRIMARY KEY,
     id_simulado INTEGER NOT NULL,
-    questoes INTEGER NOT NULL,
-    descricao TEXT NOT NULL,
-    respostas_simulado VARCHAR(1) NOT NULL,
+    numero_questao INTEGER NOT NULL,
+    resposta_simulado VARCHAR(1) NOT NULL,
     CONSTRAINT fk_simulado FOREIGN KEY (id_simulado) REFERENCES simulados(id)
 );
 
-CREATE TABLE filosofiaMedieval (
-    id_questao SERIAL PRIMARY KEY,
-    id_simulado INTEGER NOT NULL,
-    questoes INTEGER NOT NULL,
-    descricao TEXT NOT NULL,
-    respostas_simulado VARCHAR(1) NOT NULL,
-    CONSTRAINT fk_simulado FOREIGN KEY (id_simulado) REFERENCES simulados(id)
-);
-
-CREATE TABLE filosofiaModerna (
-    id_questao SERIAL PRIMARY KEY,
-    id_simulado INTEGER NOT NULL,
-    questoes INTEGER NOT NULL,
-    descricao TEXT NOT NULL,
-    respostas_simulado VARCHAR(1) NOT NULL,
-    CONSTRAINT fk_simulado FOREIGN KEY (id_simulado) REFERENCES simulados(id)
-);
-
-CREATE TABLE filosofiaContemporanea (
-    id_questao SERIAL PRIMARY KEY,
-    id_simulado INTEGER NOT NULL,
-    questoes INTEGER NOT NULL,
-    descricao TEXT NOT NULL,
-    respostas_simulado VARCHAR(1) NOT NULL,
-    CONSTRAINT fk_simulado FOREIGN KEY (id_simulado) REFERENCES simulados(id)
-);
+INSERT INTO (id_simulado, questões, descricao, resposta_simulado)
+VALUES
+(1, 1, 'B'),
