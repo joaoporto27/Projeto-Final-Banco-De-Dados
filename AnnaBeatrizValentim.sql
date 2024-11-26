@@ -28,5 +28,8 @@ CREATE TABLE filosofiaAntiga(
     CONSTRAINT fk_simulado FOREIGN KEY (id_simulado) REFERENCES simulados(id)
 );
 
-
-INSERT INTO simulados (nome_simulado, descricao, imagem) VALUES
+INSERT INTO simulados (nome_simulado, imagem) VALUES
+('Filosofia Antiga', 'https://site-filosofia.vercel.app/img/simulado01.png'),
+('Filosofia Moderna', 'https://site-filosofia.vercel.app/img/simulado03.png'),
+('Filosofia Medieval', 'https://site-filosofia.vercel.app/img/simulado02.png'),
+('Filosofia Contemporânea', 'https://site-filosofia.vercel.app/img/simulado04.png');
