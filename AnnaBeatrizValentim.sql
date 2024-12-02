@@ -19,17 +19,10 @@ CREATE TABLE simulados (
     imagem VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE filosofiaAntiga(
-    id_questao SERIAL PRIMARY KEY,
-    id_simulado INTEGER NOT NULL,
-    questoes INTEGER NOT NULL,
-    descricao TEXT NOT NULL,
-    respostas_simulado VARCHAR(1) NOT NULL,
-    CONSTRAINT fk_simulado FOREIGN KEY (id_simulado) REFERENCES simulados(id)
-);
 
 INSERT INTO simulados (nome_simulado, imagem) VALUES
 ('Filosofia Antiga', 'https://site-filosofia.vercel.app/img/simulado01.png'),
 ('Filosofia Moderna', 'https://site-filosofia.vercel.app/img/simulado03.png'),
 ('Filosofia Medieval', 'https://site-filosofia.vercel.app/img/simulado02.png'),
 ('Filosofia Contemporânea', 'https://site-filosofia.vercel.app/img/simulado04.png');
+
