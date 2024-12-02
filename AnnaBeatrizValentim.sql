@@ -37,10 +37,11 @@ CREATE TABLE questoes (
     alternativa_c BOOLEAN NOT NULL,
     alternativa_d BOOLEAN NOT NULL,
     alternativa_e BOOLEAN NOT NULL,
+    resposta_correta VARCHAR (1),
     CONSTRAINT fk_simulado  FOREIGN KEY (id_simulado) REFERENCES simulados(id_simulado)
 );
 
-INSERT INTO questoes (id_simulado, numero_questao, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e)
+INSERT INTO questoes (id_simulado, numero_questao, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, resposta_correta)
 VALUES
 (3, 1, false, false, true, false, false, 'C'),
 (3, 2, true, false, false, false, false, 'A'),
@@ -58,7 +59,7 @@ VALUES
 (3, 14, false, false, true, false, false, 'C');
 
 
-INSERT INTO questoes (id_simulado, numero_questao, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e)
+INSERT INTO questoes (id_simulado, numero_questao, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, resposta_correta)
 VALUES
 (4, 1, false, false, true, false, false, 'C'),
 (4, 2, false, true, false, false, false, 'B'),
