@@ -265,15 +265,15 @@ VALUES
 INSERT INTO noticias_imagens (noticia_id, url_imagem) VALUES 
 (1, 'https://site-filosofia.vercel.app/img/socrates.jpg'),
 (1, 'https://site-filosofia.vercel.app/img/aristoteles.png'),
-(1, 'https://site-filosofia.vercel.app/img/plat%C3%A3o.jpg'),
-(1, 'https://site-filosofia.vercel.app/img/descartes-peq.jpg'),
-(1, 'https://site-filosofia.vercel.app/img/Immanuel%20Kant.jpg'),
-(1, 'https://site-filosofia.vercel.app/img/David%20Hume.jpg'),
-(1, 'https://site-filosofia.vercel.app/img/Saint_Augustine.jpg'),
-(1, 'https://site-filosofia.vercel.app/img/Immanuel%20Kant.jpg'),
-(1, 'https://site-filosofia.vercel.app/img/Maquiavel.jpg'),
-(1, 'https://site-filosofia.vercel.app/img/rousseau.jpg'),
+(2, 'https://site-filosofia.vercel.app/img/plat%C3%A3o.jpg'),
+(2, 'https://site-filosofia.vercel.app/img/descartes-peq.jpg'),
+(3, 'https://site-filosofia.vercel.app/img/Immanuel%20Kant.jpg'),
+(3, 'https://site-filosofia.vercel.app/img/David%20Hume.jpg'),
+(4, 'https://site-filosofia.vercel.app/img/Saint_Augustine.jpg'),
+(4, 'https://site-filosofia.vercel.app/img/Immanuel%20Kant.jpg'),
+(5, 'https://site-filosofia.vercel.app/img/Maquiavel.jpg'),
+(5, 'https://site-filosofia.vercel.app/img/rousseau.jpg'),
 (1, 'https://site-filosofia.vercel.app/img/thomas-hobbes.png'),
-(1, 'https://site-filosofia.vercel.app/img/satre.jpg'),
-(1, 'https://site-filosofia.vercel.app/img/simone_de_beauvoir.jpg');
+(2, 'https://site-filosofia.vercel.app/img/satre.jpg'),
+(4, 'https://site-filosofia.vercel.app/img/simone_de_beauvoir.jpg');
 

@@ -32,10 +32,43 @@ CREATE TABLE questoes (
     id_questao SERIAL PRIMARY KEY,
     id_simulado INTEGER NOT NULL,
     numero_questao INTEGER NOT NULL,
-    resposta_simulado VARCHAR(1) NOT NULL,
-    CONSTRAINT fk_simulado FOREIGN KEY (id_simulado) REFERENCES simulados(id)
+    alternativa_a BOOLEAN NOT NULL,
+    alternativa_b BOOLEAN NOT NULL,
+    alternativa_c BOOLEAN NOT NULL,
+    alternativa_d BOOLEAN NOT NULL,
+    alternativa_e BOOLEAN NOT NULL,
+    resposta_correta VARCHAR(1) NOT NULL,
+    CONSTRAINT fk_simulado  FOREIGN KEY (id_simulado) REFERENCES simulados(id_simulado)
 );
 
-INSERT INTO (id_simulado, questões, descricao, resposta_simulado)
+INSERT INTO questoes (id_simulado, numero_questao, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, resposta_correta)
 VALUES
-(1, 1, 'B'),
+(1, 1, false, true, false, false, false, 'b'),
+(1, 2, false, false, false, true, false, 'd'),
+(1, 3, false, true, false, false, false, 'b'),
+(1, 4, false, false, false, true, false, 'd'),
+
+(1, 5, false, false, true, false, false, 'c'),
+(1, 6, false, false, true, false, false, 'c'),
+(1, 7, false, false, true, false, false, 'c'),
+(1, 8, true, false, false, false, false, 'a'),
+(1, 9, false, true, false, false, false, 'b'),
+(1, 10, false, true, false, false, false, 'b'),
+(1, 11, false, false, true, false, false, 'c'),
+(1, 12, false, false, true, false, false, 'c'),
+(1, 13, false, true, false, false, false, 'b'),
+(1, 14, true, false, false, false, false, 'a');
+
+
+INSERT INTO questoes (id_simulado, numero_questao, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, resposta_correta)
+VALUES
+(2, 1, false, true, false, false, false, 'b'),
+(2, 2, true, false, false, false, false, 'a'),
+(2, 3, true, false, false, false, false, 'a'),
+(2, 4, false, true, false, false, false, 'b'),
+(2, 5, false, true, false, false, false, 'b'),
+(2, 6, false, false, true, false, false, 'c');
+
+
+
+
